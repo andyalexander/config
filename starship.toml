@@ -7,12 +7,23 @@
 
 [aws]
 symbol = "  "
+format = 'on [$symbol($profile )(\($region\) )]($style)'
+style = 'bold blue'
+
+[aws.region_aliases]
+ap-southeast-2 = 'au'
+us-east-1 = 'va'
+
+[aws.profile_aliases]
+CompanyGroupFrobozzOnCallAccess = 'Frobozz'
 
 [conda]
 format = '\[[$symbol$environment($version)]($style)\]'
+ignore_base = true
 
 [docker_context]
 symbol = " "
+format = 'via [$symbol$context]($style) '
 
 [git_branch]
 symbol = " "
